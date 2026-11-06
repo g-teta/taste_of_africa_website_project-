@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Tastes of Africa</title>
+  <meta name="description" content="Discover authentic African recipes, culinary traditions and flavours.">
+
+  <!-- Google Fonts: DM Serif Display (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Apply the saved colour theme before the page paints (prevents a flash) -->
+  <script>try{var t=localStorage.getItem('toa-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+
+  <!-- ===== Header & navigation ===== -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Tastes of Africa home">
+      <span class="brand-mark">T</span>
+      <span>TASTES <i>OF</i> AFRICA</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="stories.html">Food stories</a>
+        <a href="about.html">Our table</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-button search-nav" href="recipes.html#recipe-search" aria-label="Search recipes"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></a>
+      <a class="icon-button favourite-nav" id="fav-link" href="favorites.html" aria-label="Saved recipes"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span id="fav-count" hidden>0</span></a>
+      <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme"><svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 15.1A9 9 0 0 1 8.9 3.2 9 9 0 1 0 20.8 15.1Z"/></svg><svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav"><svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero: welcome text + large cuisine image -->
+    <section class="hero page-pad" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A journey through African flavours</p>
+        <h1 id="hero-title">Discover the soul of <em>African cuisine.</em></h1>
+        <p class="hero-description">Explore authentic recipes, rich culinary traditions and unforgettable <mark>flavours</mark> from across Africa.</p>
+        <div class="button-row">
+          <a class="primary-button" href="recipes.html">Explore recipes <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a>
+          <a class="text-button" href="stories.html">Our food stories <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a>
+        </div>
+        <div class="hero-note"><span>54</span><p>countries<br>one shared table</p></div>
+      </div>
+      <figure class="hero-media">
+        <img src="images/Smoky%20Jollof%20rice.jpg" alt="A vibrant platter of jollof rice, grilled fish and vegetables">
+        <figcaption class="hero-caption"><span>01</span><p><b>THE WEST AFRICAN TABLE</b>Nigeria &middot; Jollof rice</p></figcaption>
+      </figure>
+    </section>
+
+    <section class="marquee" aria-label="Cuisines"><div>JOLLOF <span>&#10022;</span> TAGINE <span>&#10022;</span> INJERA <span>&#10022;</span> PILAU <span>&#10022;</span> BOBOTIE <span>&#10022;</span> MAAFE</div></section>
+
+    <!-- Featured dishes (figure + figcaption) -->
+    <section class="section page-pad featured-section" aria-labelledby="featured-title">
+      <div class="section-heading"><div><p class="eyebrow">From our kitchen</p><h2 id="featured-title">Recipes to gather <em>around</em></h2></div><a class="text-button" href="recipes.html">View all recipes <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a></div>
+      <div class="featured-grid">
+        <figure class="recipe-feature large">
+          <div class="recipe-image">
+            <a href="recipe-jollof-rice.html" aria-label="Open Smoky Party Jollof Rice"><img src="images/Smoky%20Jollof%20rice.jpg" alt="Smoky Party Jollof Rice, a dish from Nigeria" loading="lazy"></a>
+            <button type="button" class="heart-button" data-id="jollof-rice" aria-label="Save Smoky Party Jollof Rice" aria-pressed="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+          </div>
+          <figcaption>
+            <div class="recipe-meta"><span>Nigeria</span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 55 min</span></div>
+            <h3><a href="recipe-jollof-rice.html">Smoky Party Jollof Rice</a></h3>
+            <p class="intro">A celebratory one-pot rice, layered with fire-roasted peppers, tomatoes and the unmistakable smoky flavour of a Nigerian gathering.</p>
+            <a class="recipe-link" href="recipe-jollof-rice.html">Explore recipe <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a>
+          </figcaption>
+        </figure>
+        <div class="small-features">
+        <figure class="recipe-feature">
+          <div class="recipe-image">
+            <a href="recipe-lentils-injera.html" aria-label="Open Berbere Lentils &amp; Injera"><img src="images/Berbere%20Lentils%20%26%20Injera.jpg" alt="Berbere Lentils &amp; Injera, a dish from Ethiopia" loading="lazy"></a>
+            <button type="button" class="heart-button" data-id="lentils-injera" aria-label="Save Berbere Lentils &amp; Injera" aria-pressed="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+          </div>
+          <figcaption>
+            <div class="recipe-meta"><span>Ethiopia</span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 45 min</span></div>
+            <h3><a href="recipe-lentils-injera.html">Berbere Lentils &amp; Injera</a></h3>
+            <p class="intro">Earthy red lentils simmered with fragrant berbere, traditionally gathered with pieces of tangy, cloud-soft injera.</p>
+            <a class="recipe-link" href="recipe-lentils-injera.html">Explore recipe <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a>
+          </figcaption>
+        </figure>
+        <figure class="recipe-feature">
+          <div class="recipe-image">
+            <a href="recipe-tagine.html" aria-label="Open Preserved Lemon Tagine"><img src="images/Preserved%20Lemon%20Tagine.jpg" alt="Preserved Lemon Tagine, a dish from Morocco" loading="lazy"></a>
+            <button type="button" class="heart-button" data-id="tagine" aria-label="Save Preserved Lemon Tagine" aria-pressed="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+          </div>
+          <figcaption>
+            <div class="recipe-meta"><span>Morocco</span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 1 hr 35</span></div>
+            <h3><a href="recipe-tagine.html">Preserved Lemon Tagine</a></h3>
+            <p class="intro">A fragrant, slow-cooked Moroccan classic with saffron, green olives and the bright complexity of preserved lemon.</p>
+            <a class="recipe-link" href="recipe-tagine.html">Explore recipe <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a>
+          </figcaption>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore by region -->
+    <section class="region-section section page-pad" aria-labelledby="region-title">
+      <div class="section-heading"><div><p class="eyebrow">Taste the continent</p><h2 id="region-title">Explore by <em>region</em></h2></div></div>
+      <div class="region-grid">
+        <a class="region-card" href="regions-west-africa.html">
+          <img src="images/Rich%20Egusi%20Soup.jpg" alt="West Africa cuisine" loading="lazy">
+          <span class="region-index">01</span>
+          <span class="region-copy"><small>2 recipes</small><b>West Africa</b><i>Bold, smoky & soulful</i></span>
+          <span class="region-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span>
+        </a>
+        <a class="region-card" href="regions-east-africa.html">
+          <img src="images/Berbere%20Lentils%20%26%20Injera.jpg" alt="East Africa cuisine" loading="lazy">
+          <span class="region-index">02</span>
+          <span class="region-copy"><small>2 recipes</small><b>East Africa</b><i>Fragrant, bright & shared</i></span>
+          <span class="region-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span>
+        </a>
+        <a class="region-card" href="regions-north-africa.html">
+          <img src="images/Preserved%20Lemon%20Tagine.jpg" alt="North Africa cuisine" loading="lazy">
+          <span class="region-index">03</span>
+          <span class="region-copy"><small>1 recipe</small><b>North Africa</b><i>Spiced, slow & aromatic</i></span>
+          <span class="region-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Introductory video -->
+    <section class="video-section section page-pad" aria-labelledby="video-title">
+      <p class="eyebrow">On screen</p>
+      <h2 id="video-title">A journey through <em>African food</em></h2>
+      <div class="video-frame"><iframe src="https://www.youtube.com/embed/mXrhGVV16P4" title="A culinary journey through Africa" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+    </section>
+
+    <!-- Feature story -->
+    <section class="story-section section page-pad" style="padding-top:0;padding-bottom:0">
+      <div class="story-lead">
+        <div class="story-lead-image"><img src="images/The%20women%20who%20keep%20Accra%E2%80%99s%20markets%20moving.jpg" alt="People gathering around fresh produce at an African market" loading="lazy"></div>
+        <div class="story-lead-copy">
+          <p class="eyebrow">Food &amp; culture</p>
+          <h2>Every recipe carries a <em>story.</em></h2>
+          <p>Across the continent, food holds <mark>memory</mark>. It marks homecomings, celebrations and quiet Sunday tables. We meet the people preserving these traditions.</p>
+          <a class="text-button light" href="stories.html">Read the story <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a>
+        </div>
+      </div>
+      <div class="story-aside">
+        <p class="story-number">NO. 02</p>
+        <h3>The women who keep Accra&rsquo;s markets moving</h3>
+        <p>Meet the traders behind the produce, spice and spirit of Makola.</p>
+        <a href="stories.html#accra-markets" aria-label="Read story"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a>
+      </div>
+    </section>
+
+    <!-- Latest food trends (<article>) -->
+    <section class="trends-section section page-pad" aria-labelledby="trends-title">
+      <div class="section-heading"><div><p class="eyebrow">What&rsquo;s cooking</p><h2 id="trends-title">Latest food <em>trends</em></h2></div></div>
+      <div class="trends-grid">
+        <article class="trend"><time datetime="2026-09-12">12 September 2026</time><h3>Ancient grains are back</h3><p><mark>Fonio</mark>, sorghum and teff are appearing on menus worldwide, loved for being gluten-free, drought-resistant and full of nutrients.</p></article>
+        <article class="trend"><time datetime="2026-08-30">30 August 2026</time><h3>Street food goes global</h3><p>Bunny chow, <mark>suya</mark> and chapati rolls are leaving local markets for food festivals and pop-ups across Europe and North America.</p></article>
+        <article class="trend"><time datetime="2026-08-05">5 August 2026</time><h3>Plant-forward African cooking</h3><p>Cooks are rediscovering traditional dishes built on greens, beans and <mark>cassava leaves</mark>, like Rwanda’s isombe, as naturally healthy options.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Newsletter sign-up ===== -->
+  <section class="newsletter" aria-labelledby="news-title">
+    <div>
+      <p class="eyebrow">Letters from our kitchen</p>
+      <h2 id="news-title">Good food.<br><em>Rich stories.</em></h2>
+    </div>
+    <form id="newsletter-form" novalidate>
+      <label class="field"><span class="sr-only">Email address</span>
+        <input type="email" id="news-email" name="email" placeholder="Your email address" autocomplete="email" required>
+        <button type="submit" aria-label="Subscribe"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></button>
+      </label>
+      <p class="error" id="news-error" role="alert"></p>
+      <p>One thoughtful letter each month. No noise, just flavour.</p>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer page-pad">
+    <div class="footer-brand">
+      <span class="brand-mark">T</span>
+      <h2>TASTES <i>OF</i> AFRICA</h2>
+      <p>A living archive of recipes,<br>people and places.</p>
+    </div>
+    <div class="footer-links">
+      <div><small>DISCOVER</small><a href="recipes.html">Recipes</a><a href="stories.html">Food stories</a><a href="about.html">Our table</a></div>
+      <div><small>REGIONS</small><a href="regions-west-africa.html">West Africa</a><a href="regions-east-africa.html">East Africa</a><a href="regions-north-africa.html">North Africa</a></div>
+      <div><small>CONNECT</small><a href="contact.html">Contact</a><a href="favorites.html">Saved recipes</a></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Tastes of Africa</span><span>Made with care for every table.</span></div>
+  </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
